@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "target": "ES2021",
+        "jsx": "react",
+        "skipLibCheck": true,
+        "types": [],
+        "strictNullChecks": true,
+        "strictFunctionTypes": true
+    },
+    "typeAcquisition": {
+        "enable": false
+    },
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*"
+    ]
+}

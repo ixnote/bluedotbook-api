@@ -1,0 +1,42 @@
+{
+  "name": "bluedotbook",
+  "version": "1.0.0",
+  "description": "Node.js Restful CRUD API with Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "debug": "nodemon --inspect-brk server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest",
+    "api",
+    "mongodb"
+  ],
+  "author": "ixnotes",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "datauri": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "mongoose": "^7.6.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.6",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
