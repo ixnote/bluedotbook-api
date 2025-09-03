@@ -24,7 +24,10 @@ export const register = asyncHandler(async (req, res, next) => {
 export const login = asyncHandler(async (req, res, next) => {
   const { username, password } = req.body;
   const user = await UserModel.findOne({
-    username: username.toLowerCase(),
+    $or: [
+      { username: username.toLowerCase() },
+      { email: username.toLowerCase() },
+    ],
   });
   //check if user exists
   if (!user) {
